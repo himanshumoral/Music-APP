@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(175deg, rgb(60, 61, 61) , rgb(16, 44, 74));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 80vh;
+}
+.display{
+    margin: auto;
+    margin-top: 10%;
+    background-color: rgb(14, 12, 37);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1{
+    margin: 20px;
+    margin-top: 35px;
+    color: rgb(48, 63, 157);
+    font-family: Arial, sans-serif;
+}
+
+.login input{
+    margin : 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(195, 190, 241);
+}
+
+.login button{
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(41, 152, 185);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register h1{
+    margin: 10px;
+    margin-top: 15px;
+    color: rgb(40, 97, 176);
+    font-family: Arial, sans-serif;
+}
+
+.register h3{
+    margin: 5px;
+    color: rgb(79, 70, 108);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.register input{
+    margin : 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(195, 190, 241);
+}
+
+.register button{
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(41, 152, 185);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .display {
+        width: 85%;
+        max-width: 320px;
+        margin: 0;  
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .login input, .register input {
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .login button, .register button {
+        margin-left: 0;
+        width: 75%;
+    }
+}

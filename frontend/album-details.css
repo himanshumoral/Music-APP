@@ -1,0 +1,221 @@
+body {
+    background : linear-gradient(175deg, rgba(31, 31, 49), rgb(0, 0, 0));
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 37, 38);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(56, 69, 95);
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.AlbumTit {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(24, 24, 33);
+    border-radius: 10px;
+    width: 150px;
+    height: 280px;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 8px 0 4px 0;
+    font-size: 14px;
+}
+
+.card p {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 2px;
+    margin-bottom: 0px
+}
+
+.card .Remove{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(12, 17, 27);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.player-info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.player-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#progressBar {
+    width: 200px;
+}
+
+input{
+    margin: 5px 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(37, 37, 38);
+    color: white;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        padding-bottom: 120px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a, .nav-links button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .music-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 130px;
+        height: 240px;
+    }
+
+    .player {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .player-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #progressBar {
+        width: 120px;
+    }
+
+    .player-info h4, .player-info p {
+        font-size: 12px;
+    }
+}
